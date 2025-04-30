@@ -1,0 +1,97 @@
+.about-page {
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.about-header {
+  text-align: center;
+  padding: 20px 0;
+  color: #e91e63;
+}
+
+.about-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+/* Flex layout for mission and why choose us with image on the right */
+.about-main-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 40px 0;
+}
+
+.about-left-column {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.about-right-column {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-main-image {
+  max-width: 90%;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.about-mission h2,
+.about-why h2 {
+  color: #e91e63;
+  margin-bottom: 10px;
+}
+
+.about-mission p,
+.about-why p {
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.about-values-section {
+  padding: 40px 0;
+  background: linear-gradient(to right, #fff0f5, #fce4ec);
+  text-align: center;
+}
+
+.about-values-section h2 {
+  color: #e91e63;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+  padding: 0 10px;
+}
+
+.value-card {
+  background: #ffffff90;
+  padding: 20px;
+  border-radius: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+.value-icon {
+  font-size: 2rem;
+  color: #c2185b;
+  margin-bottom: 10px;
+}
+

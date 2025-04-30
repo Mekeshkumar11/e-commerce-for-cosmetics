@@ -1,0 +1,25 @@
+# Node modules
+node_modules/
+
+# Environment files
+.env
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Logs
+logs
+*.log
+
+# Dependency directories (optional if using monorepo)
+client/node_modules/
+server/node_modules/
+
+# Build files
+client/build/
+dist/
+
+# IDE files
+.vscode/
+.idea/

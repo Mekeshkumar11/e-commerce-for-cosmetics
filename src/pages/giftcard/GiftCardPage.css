@@ -1,0 +1,74 @@
+.gift-card-page {
+    padding: 40px 20px;
+    background: linear-gradient(to right, #ffe9f5, #fff6fc);
+    min-height: 100vh;
+    text-align: center;
+  }
+  
+  .cosmetix-heading {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .cosmetix-style {
+    font-family: 'Cursive';
+    font-size: 2.8rem;
+    color: #d81b60;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+  }
+  
+  .slogan {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 40px;
+  }
+  
+  .gift-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+  
+  .gift-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .gift-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .gift-card h2 {
+    color: #c2185b;
+    margin-bottom: 10px;
+  }
+  
+  .gift-card .offer {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #880e4f;
+    margin: 10px 0;
+  }
+  
+  .gift-card .description {
+    color: #444;
+    margin-bottom: 20px;
+  }
+  
+  .avail-btn {
+    background-color: #ec407a;
+    border: none;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .avail-btn:hover {
+    background-color: #ad1457;
+  }
+  

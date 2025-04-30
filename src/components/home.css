@@ -1,0 +1,134 @@
+.slider-container {
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slider {
+    position: relative;
+  }
+  
+  .slider-image {
+    width: 100%;        
+    height: 25vw;        
+    object-fit: cover;   
+    overflow: hidden;    
+  }
+  
+  .slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 105, 180, 0.7);
+    border: none;
+    padding: 10px 15px;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .left {
+    left: 15px;
+  }
+  
+  .right {
+    right: 15px;
+  }
+  
+  .diamond-collage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+    padding-top : 200px;
+    padding-bottom: 100px;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+  }
+  
+  .diamond {
+    width: 160px;
+    height: 160px;
+    transform: rotate(45deg);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    background: linear-gradient(135deg, #ffe0f0, #ffe6f6); /* Soft pink gradient */
+    border: 2px solid #fff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  
+  .diamond .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotate(-45deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    opacity: 0;
+    z-index: 4;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  }
+  
+  .diamond:hover .overlay {
+    opacity: 1;
+  }
+  
+  .diamond::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(145deg, rgba(255, 0, 150, 0.3), rgba(255, 200, 250, 0.2));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+  }
+  
+  .diamond:hover::before {
+    opacity: 1;
+  }
+  
+  .diamond img {
+    width: 160%;
+    height: 160%;
+    object-fit: cover;
+    transform: rotate(-45deg) scale(1);
+    transition: transform 0.4s ease, filter 0.4s ease;
+    position: absolute;
+    top: -30%;
+    left: -30%;
+    z-index: 1;
+    border-radius: 10px;
+  }
+  
+  .diamond:hover img {
+    transform: rotate(-45deg) scale(1.15);
+    filter: brightness(1.1) contrast(1.1);
+    z-index: 3;
+  }
+  
+  .diamond:hover {
+    box-shadow: 0 15px 25px rgba(255, 0, 150, 0.3);
+  }
+  
